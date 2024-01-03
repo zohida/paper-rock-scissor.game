@@ -16,11 +16,7 @@ img{
     width: 1px;
 }
 
-.container{
-    /* width: ; */
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 
 a{
     display: inline-block;
@@ -43,11 +39,130 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: "Open sans", "Arial", sans-serif;
+    font-family: 'Barlow Semi Condensed', "Arial",sans-serif;
     font-weight: 400;
     font-size: 16px;
+    background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
 }
 
-.site-main{
-    flex-grow: 1;
+.container {
+    max-width: 740px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+    border-radius: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.29);
+    padding: 18px 24px 18px 33.5px;
+}
+
+.game-titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-title {
+    margin: 0;
+    color: white;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.score-wrapper {
+    max-width: 150px;
+    width: 100%;
+    padding: 16px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFF 100%);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
+}
+
+.score-title {
+    margin: 0;
+    color: #5700D1;
+    font-weight: 600;
+}
+
+.score {
+    color: #59516B;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.cards-wrapper {
+    margin: 0 auto;
+    position: relative;
+    margin-top: 64px;
+    margin-bottom: 31px;
+}
+
+.triangle {
+    position: absolute;
+    top: 90.5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.paper {
+    position: absolute;
+    left: 16%;
+    
+}
+
+.scis {
+    position: absolute;
+    right: 15%;
+
+}
+
+.rock {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 235px;
+}
+
+.computer-wrapper {
+    display: none;
+}
+
+.turns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 72px;
+    padding: 0 62px 0 88px;
+    display: none;
+}
+
+.turn-text {
+    margin: 0;
+    color: #FFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 3px;
 }
