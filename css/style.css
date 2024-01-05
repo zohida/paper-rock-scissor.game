@@ -1,0 +1,67 @@
+.polygon-title {
+    margin: 0;
+    color: #FFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+    font-family: Barlow Semi Condensed;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 78.571% */
+}
+
+.scoreboard {
+    margin-bottom: 20px;
+}
+
+.hand img {
+    width: 145px ;
+    height: 148px ;
+}
+
+.hands {
+    background-image: url("../images/polygon.svg");
+    background-repeat: no-repeat;
+    width: 345px;
+    height: 345px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 64px;
+    background-position: center;
+}
+
+.scissors {
+    margin-left: 30px;
+    position: relative;
+    top: -80px;
+    left: -70px;
+}
+
+.paper {
+    margin-right: 30px;
+    position: relative;
+    top: -40px;
+    left: 30px;
+}
+
+.rock {
+    position: relative;
+    margin-top: 20px;
+    top: -80px;
+    right: -70px;
+}
+
+.lizard {
+    position: relative;
+    margin-top: 20px;
+    top: -90px;
+    right: -30px;
+}
+
+.spock {
+    position: relative;
+    margin-top: 20px;
+    top: -90px;
+    left: -30px;
+}
+

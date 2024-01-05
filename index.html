@@ -3,7 +3,7 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper, Scissor, Rock </title>
+    <title>Rock, Paper and Scissor game </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,56 +12,81 @@
     <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
  </head>
  <body>
-   <div class="container">
 
-      <div class="wrapper">
-         <div class="game-titles">
-            <h3 class="game-title">ROCK</h3>
-            <h3 class="game-title">PAPER</h3>
-            <h3 class="game-title">SCISSORS</h3>
+   <div class="wrapper">
+
+      <div class="scoreboard">
+         <div class="title-wrapper">
+            <h3 class="title">ROCK</h3>
+            <h3 class="title">PAPER</h3>
+            <h3 class="title">SCISSORS</h3>
          </div>
-         <div class="score-wrapper">
-            <p class="score-title">
-               SCORE
-            </p>
-            <span class="score">
-               0
-            </span>
+         <div class="score">
+            <p>SCORE</p>
+            <h4>0</h4>
          </div>
       </div>
 
-      <div class="turns">
-         <p class="turn-text">YOU PICKED</p>
-         <p class="turn-text">THE HOUSE PICKED</p>
-      </div>
-
-      <div class="cards-wrapper">
-         <img class="triangle" src="./images/triangle.svg" alt="">
-         <div class="cards">
-            <img class="paper user" src="./images/paper.png" alt=""
-            width="198" height="203">
-            <img class="scis user" src="./images/scissor.png" alt=""
-            width="198" height="203">
-            <img class="rock user" src="./images/rock.png" alt=""
-            width="198" height="203">
+      <div class="hands">
+         <div class="hand paper">
+            <img src="./images/paper.png" alt="Hand that showes paper" onclick="pickUserHand('paper')"
+            width="" height="">
+         </div>
+         <div class="hand scissors">
+           <img src="./images/scissors.png" alt="Hand that showes scissors" onclick="pickUserHand('scissors')">
+         </div>
+         <div class="hand rock">
+            <img src="./images/rock.png" alt="Hand that showes rock" onclick="pickUserHand('rock')">
          </div>
       </div>
 
-      <div class="cards-wrapper computer-wrapper">
-         <img class="triangle" src="./images/triangle.svg" alt="">
-         <div class="cards">
-            <img class="paper computer" src="./images/paper.png" alt=""
-            width="198" height="203">
-            <img class="scis computer" src="./images/scissor.png" alt=""
-            width="198" height="203">
-            <img class="rock computer" src="./images/rock.png" alt=""
-            width="198" height="203">
+      <div class="contest">
+         <div class="userhand">
+            <h2>YOU PICKED</h2>
+            <div class="handImageContainer">
+               <img id="userPickImage" src="./images/paper.png" alt="">
+            </div>
+         </div>
+         <div class="referee">
+            <div class="desicion">
+               <h2>YOU WIN</h2>
+            </div>
+            <div class="newGame" onclick="restartGame()">
+               PLAY AGAIN
+            </div>
+         </div>
+         <div class="computerhand">
+            <h2>THE HOUSE PICKED</h2>
+            <div class="handImageContainer">
+               <img id="computerPickImage" src="./images/rock.png" alt="">
+            </div>
          </div>
       </div>
 
 
+      <div class="polygon-wrapper">
+         <a class="polygon-btn" href="./game.html">Polygon</a>
+      </div>
+      <button class="rules-btn" tabindex="1">Rules</button>
+      <div class="overlay" id="overlay"></div>
+      <div class="modal">
+         <div class="modal-container">
+            <div class="modal-header">
+               <h2 class="modal-title">
+                  Rules
+               </h2>
+               <button class="close-btn">
+                  <img src="./images/close-icon.svg" alt="Close Button">
+               </button>
+            </div>
+            <img src="./images/rule.png" alt="Rules Image">
+         </div>
+      </div>
 
    </div>
+
+   <script src="./js/main.js"></script>
+
  </body>
  </html>
 
